@@ -19,6 +19,8 @@ contract  Token {
     }
 //transfer token abd requirement that must have token available already
     function  transer(address _to,uint _amount) external {
+        console.log("**sender balance**",balances[msg.sender]);
+        console.log("**sender is sending %s tokens**",_amount,_to);
         require(balances[msg.sender]>=_amount,'Not enough tokens');
         balances[msg.sender]-=_amount;
         balances[_to]+=_amount;
