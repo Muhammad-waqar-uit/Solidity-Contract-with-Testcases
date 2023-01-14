@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
 pragma solidity  >=0.5.0 <0.9.0;
-
+import "hardhat/console.sol";
 contract  Token {
     string public name='Hardhat Token';
     string public symbol='HHT';
